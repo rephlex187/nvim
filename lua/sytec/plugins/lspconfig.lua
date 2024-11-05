@@ -101,7 +101,7 @@ return {
         vim.keymap.set("n", "I", vim.lsp.buf.hover, local_keymap_opts)
         vim.keymap.set("n", "gr", vim.lsp.buf.rename, local_keymap_opts)
         vim.keymap.set("n", "gD", vim.lsp.buf.declaration, local_keymap_opts)
-        vim.keymap.set('n', 'gl', ':lua vim.diagnostic.open_float(nil, { scope = "line" })<CR>', local_keymap_opts)
+        vim.keymap.set('n', 'gl', ':lua vim.diagnostic.open_float(0, { scope = "line" })<CR>', local_keymap_opts)
       end,
     })
   end,
