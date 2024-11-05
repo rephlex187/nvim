@@ -12,8 +12,6 @@ return {
     "emmet_language_server",
     "tailwindcss",
     "marksman",
-    "pylsp",
-    "gopls",
     "volar",
     "astro",
     "twiggy_language_server",

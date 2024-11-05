@@ -33,7 +33,8 @@ return {
         "glimmer",
         "astro",
         "pug",
-        "xml"
+        "xml",
+        "vue"
       }, -- one of "all" or a list of languages
       context_commentstring = {
         enable = true,
