@@ -13,10 +13,8 @@ return {
         mappings = {
           n = {
             ["q"] = actions.close,
-            ["<c-d>"] = require("telescope.actions").delete_buffer,
           },
           i = {
-            ["<c-d>"] = require("telescope.actions").delete_buffer,
           },
         },
         preview = {
@@ -72,7 +70,7 @@ return {
         default_text = "-g '!*dist*' -g '!*vendor*' -g '!*node_modules*' -g !*lock* "
       })
     end)
-    vim.keymap.set("n", "<C-d>", function()
+    vim.keymap.set("n", "<leader>af", function()
       builtin.diagnostics()
     end)
   end,
