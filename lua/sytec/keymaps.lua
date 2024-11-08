@@ -51,12 +51,14 @@ keymap("n", "<leader>w", ":w<CR>")
 keymap("v", "<", "<gv")
 keymap("v", ">", ">gv")
 
+
 -- Line movements
-keymap('n', '<C-k>', ':move -2<CR>')
-keymap('n', '<C-j>', ':move +1<CR>')
--- Line movements
-keymap('v', '<C-k>', ':move -2<CR>')
-keymap('v', '<C-j>', ':move +1<CR>')
+keymap('n', '<C-k>', ':move .-2<CR>==')
+keymap('n', '<C-j>', ':move .+1<CR>==')
+
+-- Line movements in Visual mode
+keymap('v', '<C-k>', ":move '<-2<CR>gv=gv")
+keymap('v', '<C-j>', ":move '>+1<CR>gv=gv")
 
 -- New terminal
 keymap('n', '<F5>', ':term<CR>', { noremap = true, silent = true })
@@ -69,3 +71,6 @@ keymap('i', '<C-x>', 'copilot#Next()',
 
 keymap('n', '<C-0>', ':CodeCompanionChat<CR>')
 keymap("n", "<C-9>", "<cmd>CodeCompanionActions<cr>")
+
+-- Remove all macro recording keybiinds
+keymap('n', 'q', '<Nop>')

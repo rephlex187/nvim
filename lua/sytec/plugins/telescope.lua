@@ -70,7 +70,7 @@ return {
         default_text = "-g '!*dist*' -g '!*vendor*' -g '!*node_modules*' -g !*lock* "
       })
     end)
-    vim.keymap.set("n", "<leader>af", function()
+    vim.keymap.set("n", "@", function()
       builtin.diagnostics()
     end)
   end,
