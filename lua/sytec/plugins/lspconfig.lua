@@ -8,6 +8,7 @@ return {
   config = function()
     local servers = require("sytec.lsp_settings.servers")
 
+
     require("mason").setup({})
     require("mason-lspconfig").setup({
       automatic_installation = true,
@@ -97,7 +98,7 @@ return {
         -- See `:help vim.lsp.*` for documentation on any of the below functions
         local local_keymap_opts = { buffer = ev.buf, silent = true, nowait = true, noremap = true }
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, local_keymap_opts)
-        vim.keymap.set("n", "gI", vim.lsp.buf.references, local_keymap_opts)
+        vim.keymap.set("n", "gR", vim.lsp.buf.references, local_keymap_opts)
         vim.keymap.set("n", "I", vim.lsp.buf.hover, local_keymap_opts)
         vim.keymap.set("n", "gr", vim.lsp.buf.rename, local_keymap_opts)
         vim.keymap.set("n", "gD", vim.lsp.buf.declaration, local_keymap_opts)

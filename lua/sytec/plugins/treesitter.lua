@@ -6,6 +6,24 @@ return {
     require("nvim-treesitter.configs").setup({
       highlight = {
         enable = true,
+        custom_captures = {
+          ["variable"] = "Variable",
+          ["function"] = "Function",
+          ["method"] = "Function",
+          ["parameter"] = "Parameter",
+          ["property"] = "Property",
+          ["field"] = "Field",
+          ["constructor"] = "Constructor",
+          ["call"] = "Function",
+          ["constant"] = "Constant",
+          ["string"] = "String",
+          ["number"] = "Number",
+          ["boolean"] = "Boolean",
+          ["comment"] = "Comment",
+          ["keyword"] = "Keyword",
+          ["operator"] = "Operator",
+          ["class"] = "Class",
+        }
       },
       indent = {
         enable = true,
@@ -22,6 +40,7 @@ return {
         "html",
         "javascript",
         "json",
+        "go",
         "php",
         "scss",
         "typescript",
