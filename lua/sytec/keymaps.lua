@@ -65,9 +65,9 @@ keymap('n', '<F5>', ':term<CR>', { noremap = true, silent = true })
 
 -- Copilot
 keymap('i', '<C-c>', 'copilot#Accept("\\<CR>")',
-  { noremap = true, silent = true, expr = true, replace_keycodes = false })
+    { noremap = true, silent = true, expr = true, replace_keycodes = false })
 keymap('i', '<C-x>', 'copilot#Next()',
-  { noremap = true, silent = true, expr = true, replace_keycodes = false })
+    { noremap = true, silent = true, expr = true, replace_keycodes = false })
 
 keymap('n', '<C-0>', ':CodeCompanionChat<CR>')
 keymap("n", "<C-9>", "<cmd>CodeCompanionActions<cr>")
